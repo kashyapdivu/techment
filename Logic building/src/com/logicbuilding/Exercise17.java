@@ -15,7 +15,7 @@ public class Exercise17 {
 				throw new InvalidAgeException("InvalidAgeException");
 
 		} catch (Exception e) {
-			System.out.println("Exception occured: " + e);
+			System.out.println("NOT ELIGIBLE TO VOTE" );
 		}
 	}
 
@@ -24,5 +24,6 @@ public class Exercise17 {
 class InvalidAgeException extends Exception {
 	InvalidAgeException(String s) {
 		super(s);
+		System.out.println("INVALIDAGEEXCEPTION ");
 	}
 }

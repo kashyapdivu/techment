@@ -15,7 +15,7 @@ public class Exercise18 {
 			int result = num1 / num2;
 			System.out.println("Result : " + result);
 		} catch (ArithmeticException ae) {
-			System.out.println("Exception: " + ae);
+			System.out.println("ArithmeticException " );
 		} finally {
 			System.out.println("Inside finally block.");
 		}

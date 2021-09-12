@@ -8,23 +8,40 @@ public class Exercise12 {
 		// TODO Auto-generated method stub
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter the number of lines: ");
-		int number = scan.nextInt();
-		int i, j, k;
+		int rows = scan.nextInt();
 
-		for (i = 1; i <= number; i++) {
+	    int  k = 0, count = 0, count1 = 0;
 
-			for (j = 1; j <= number - i; j++) {
-				System.out.printf("  ");
-			}
-			for (j = i; j > 0; j--) {
-				System.out.printf(" %d", j);
-			}
-			for (j = 2; j <= i; j++) {
-				System.out.printf(" %d", j);
-			}
+	    for (int i = 1; i <= rows; ++i) {
+	      for (int space = 1; space <= rows - i; ++space) {
+	        System.out.print("  ");
+	        ++count;
+	      }
 
-			System.out.println();
-		}
-	}
+	      while (k != 2 * i - 1) {
+	        if (count <= rows - 1) {
+	          System.out.print((rows-i + k+1) + " ");
+	          ++count;
+	        } else {
+	          ++count1;
+	         System.out.print((rows-i + k - 2 * count1+1) + " ");
+	        }
+
+	        ++k;
+	      }
+	      count1 = count = k = 0;
+
+	      System.out.println();
+	    }
+	  
+	
+	
+
+	scan.close();
+
+
 
 }
+
+}
+

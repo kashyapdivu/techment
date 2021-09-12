@@ -6,9 +6,10 @@ public class Exercise14 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-
-		System.out.println("Enter Product:");
-		int[] arrValue1 = new int[10];
+		System.out.println("Enter number of Products :");
+		int size = scan.nextInt();
+		System.out.println("Enter Product quantity:");
+		int[] arrValue1 = new int[size];
 		int sum = 0;
 		// user input array1 element..
 		for (int i = 0; i < arrValue1.length; i++) {

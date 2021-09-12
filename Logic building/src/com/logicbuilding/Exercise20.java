@@ -30,7 +30,7 @@ public class Exercise20 {
 																						// found go to catch block
 
 		} catch (ArrayIndexOutOfBoundsException ae) {
-			System.out.println("Exception: " + ae);
+			System.out.println("Exception: " );
 		}
 	}
 
