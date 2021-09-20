@@ -24,6 +24,19 @@
          background-color: royalblue;
     }
 
+#outer_wrapper {  
+    overflow: scroll;  
+    width:100%;
+}
+#outer_wrapper #inner_wrapper {
+    width:6000px; /* If you have more elements, increase the width accordingly */
+}
+#outer_wrapper #inner_wrapper div.box { /* Define the properties of inner block */
+  
+    float: left;
+    margin: 0 4px 0 0;
+    border:1px grey solid;
+}
 
   </style>
 
@@ -60,7 +73,7 @@
           <li class="nav-item dropdown active">
             <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Development
+              Services
             </a>
             <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/development.html">Php developer</a></li>
@@ -92,86 +105,86 @@
 
     
 <hr class="solid" style="color: black;">
-<div class="about-bg" style="height: 170px;">
+<div class="about-bg" style="height: 170px; background-color: #8a2be2;">
   <h5 class=" about-heading" 
   style="color : white; padding-top: 80px;">
-  ------Developer In-------</h5>
+  ------Services -------</h5>
 
 </div>
 
-<hr class="solid" style="color: rgb(141, 136, 136);">
-<div class="row featurette">
-  <div class="col-md-1"></div>
-  <div class="col-md-6" >
-    <!-- <h2 class="featurette-heading">Working Experience </h2> -->
-  <div style="margin-left: 13px;margin-top: 20px;">
-    <p class="lead">I joined MS Techment Technology Pvt. Ltd., Bhilai as a Software Engineer Trainee on 1st August 2021.</p>
-    
-    <p class="lead">I am intern from ITechQ, Raipur in Flutter UI/Ux design ,flutter with PHP(MVC).Here I worked on design part.</p>
-  
-    
-    <p class="lead">I get internship from Rays Acedemy, Raipur in PHP (MVC).I worked also on college TNP Portal under the guidence of my seniors .</p>
-  
-  </div>
-  </div>
-  <div class="col-md-5 order-md-1">
-    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-      <title>Placeholder</title>
-      <image href="./Assets/images/work.png"  width="500" height="500" alt="..." style="border-radius: 3px;">
-        <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-    </svg>
+<div class="container px-4 py-5" id="featured-3 outer_wrapper">
+  <h2 class="pb-2 border-bottom">We Services </h2>
+
+  <!-- main block container -->
+  <!-- <div id="outer_wrapper"></div> -->
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3  " id="inner_wrapper" >
+   
+    <!-- block 1 -->
+    <div class="feature col box service-div ">
+      <div class="feature-icon  bg-gradient">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+      </div>
+       <h2>Website Design</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <!-- block 2 -->
+    <div class="feature col box service-div2 ">
+      <div class="feature-icon  bg-gradient">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+      </div>
+      <h2>Website Development</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <!-- block 3 -->
+    <div class="feature col box service-div  ">
+      <div class="feature-icon  bg-gradient">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <h2>Android App Developer</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+
+    <!-- block 4 -->
+    <div class="feature col box  service-div ">
+      <div class="feature-icon  bg-gradient">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <h2>Flutter App Developer</h2>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+
+
+      <!-- block 4 -->
+      <div class="feature col box service-div2 ">
+        <div class="feature-icon  bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h2>Adobe Designer</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
 
   </div>
 </div>
- 
-  <hr class="solid" style="color: black;width: 40rem;align-items: center;margin-left: 300px;" >
-
-
-
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">Education <span class="text-muted">Qualification</span></h2>
-      <p class="lead">RITEE,Raipur --B.Tech (CSE)<span style="font-size: medium;">2017-2021</span> <br>
-        Aggregate :: 85%
-      </p>
-      <p class="lead">I passed 12th from Vidya Niketan Hr. Sec. School,Pamgarh,Janjgir-Champa<span style="font-size: medium;"></span> <br>
-        Aggregate :: 85%
-      </p>
-      <p class="lead">I passed 12th from Vidya Niketan Hr. Sec. School,Pamgarh,Janjgir-Champa<span style="font-size: medium;"></span> <br>
-        Aggregate :: 85%
-      </p>
-    </div>
-    <div class="col-md-5 order-md-1">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <image href="./Assets/images/education.png"  width="500" height="500" alt="..." style="border-radius: 3px;">
-          <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-      </svg>
-
-    </div>
-  </div>
-
-
-  <div class="row featurette">
-    <div class="col-md-1"></div>
-    <div class="col-md-6">
-      <h2 class="featurette-heading">Acedemic Achievements <span class="text-muted" style="font-size: medium;">Cu-curiculam Activities.</span></h2>
-      <p class="lead">My team won first prize in Cricket Competion in college RitoFest 2k21</p>
-      <p class="lead">I get 2nd prize in Essay Writting in college RitoFest 2k21</p>
-      <p class="lead">I get first prize in Speech Competion on topic corruption in college event</p>
-      <p class="lead">I also took part in NSS.</p>
-        
-    </div>
-    <div class="col-md-5 order-md-1">
-      <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-        <title>Placeholder</title>
-        <image href="./Assets/images/acedemic.jpg"  width="500" height="500" alt="..." style="border-radius: 3px;">
-          <text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-      </svg>
-
-    </div>
-  </div>
-
 
 
 

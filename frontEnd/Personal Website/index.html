@@ -23,6 +23,11 @@
   <title>Hello, Divya!</title>
 
   <style>
+
+    .rect-text{
+background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0, 0.4); color: rgb(236, 231, 231);
+    }
     .heading {
       color: maroon;
       text-transform: uppercase;
@@ -67,7 +72,7 @@
   <!-- Our Code start here! -->
 
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light " style="position: fixed;top: 0; overflow: hidden;">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Divya Kashyap</a>
 
@@ -83,13 +88,17 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" href="/about.html">About</a>
+            <a class="nav-link " href="/about.html">About</a>
           </li>
 
-          <li class="nav-item dropdown">
+          <li class="nav-item">
+            <a class="nav-link " href="/development.html">Services</a>
+          </li>
+
+          <!-- <li class="nav-item dropdown ">
             <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Development
+              Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/development.html">Php developer</a></li>
@@ -106,7 +115,8 @@
               </li>
               <li><a class="dropdown-item" href="/development.html">Java FullStack Developer</a></li>
             </ul>
-          </li>
+          </li> -->
+         
           <li class="nav-item">
             <a class="nav-link" href="/contact.html">Contact Us</a>
           </li>
@@ -172,24 +182,29 @@
           aria-current="true"></button>
       </div>
       <div class="carousel-inner">
+        <!-- slider 1 -->
         <div class="carousel-item">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777"></rect>
+            <rect width="100%" height="100%" fill="#777" ></rect>
+            <image href="./Assets/images/landscape1.jpg" width="100%" height="100%" style=" filter: blur(5px);
+            -webkit-filter: blur(8px);">
           </svg>
 
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          <div class="container" >
+            <div class="carousel-caption text-start rect-text" >
+              <h1>Divya Kashyap <span style="font-size: large; font-weight: 700;">Software Developer</span> </h1>
+              <p>Quality is more important than quantity. One home run is much better than two doubles..</p>
+              <p><a class="btn btn-lg btn-primary" href="/sign_up.html">Sign up today</a></p>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
+        <!-- slider 2 -->
+        <div class="carousel-item"  >
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777"></rect>
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"
+            >
+            <rect width="100%" height="100%" fill="#ff9999"  style="backdrop-filter: blur(9px);"></rect>
           </svg>
 
           <div class="container">
@@ -200,10 +215,11 @@
             </div>
           </div>
         </div>
+        <!-- slider 3 -->
         <div class="carousel-item active">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <rect width="100%" height="100%" fill="#777"></rect>
+            <rect width="100%" height="100%" fill="#f4bbff"></rect>
           </svg>
 
           <div class="container">
@@ -231,10 +247,9 @@
   <hr class="solid" style="color: black;">
 
   <!-- service section -->
-  <h3 class="heading">--------------- My Services--------------- </h3>
+  <h3 class="heading">--- My Services--- </h3>
 
-  <div class="row " style="margin-left: 20px; align-items: center;">
-
+  <div class="row " style="margin-left: 4em;margin-bottom: 1.5rem; ">
     <div class="col-lg-4 service-div">
       <img src="./Assets/images/img1.png" class="service-img" alt="...">
       <h2>Web Development</h2>
@@ -267,7 +282,9 @@
 
  <div class="row featurette">
   <div class="col-md-7 order-md-2">
-    <h2 class="featurette-heading">Divya Kashyap <span class="text-muted" style="font-size: large;">Software Engineer Trainee</span></h2><br>
+    <h2 class="featurette-heading">Divya Kashyap
+       <span class="text-muted" style="font-size: large;">Software Engineer Trainee</span
+        ></h2><br>
     
     <p class="lead" style="font-weight: 400; color: black">My Work Experience </p>
     <hr class="dash" style="color: hsl(0, 0%, 4%);width: 30rem;">
@@ -290,13 +307,21 @@
     </svg>
 
   </div>
-</div>
 
+</div>
+<div class="container" >
+  <div class=" text-start " >
+    <p><center>
+      <a class="btn btn-lg btn-primary about-btn" 
+      href="/about.html">More Info</a>
+    </center></p>
+  </div>
+</div>
 
  <!-- divider -->
  <hr class="solid" style="color: black;">
 
- <!-- service section -->
+ <!-- contact section -->
       <h5 style="color: brown;font-size: medium; text-align: center;margin-top: 10px;">Have You Any Query? </h5>
 
  <h3 class="heading" style="font-weight: bold;">                Contact Me  </h3>
