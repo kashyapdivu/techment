@@ -15,9 +15,11 @@
 <property name="hodName" value="Mahima"></property>
 </bean> 
   
- 
+  <!--
 <bean id="department" class="com.techment.model.Department">
 <property name="hodName" value="Reena"></property>
 </bean> 
+-->
 
+  
 </beans>  
