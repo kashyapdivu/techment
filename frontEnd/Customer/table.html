@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>For loop!</title>
+
+
+</head>
+
+
+<body >
+
+   <h2 style="text-align: center;">Loop demo</h2>
+ 
+ <input id="num1" text="number" placeholder="Enter first number">     
+ <input id="num2" text="number" placeholder="Enter limit number"> 
+
+<button onclick="multi()">Click</button>
+
+
+<script>
+
+function multi(){
+    var n1= document.getElementById("num1").value;
+var n2= document.getElementById("num2").value;
+
+n1 = parseInt(n1);
+n2 = parseInt(n2);
+
+for(let i =1;i<=n2 ; i++){
+  document.write(n1 + " * "+i+ " = "+ (n1*i)+ "<br>")
+
+ //document.write('${n2} * ${i} = ${num2 * i}');
+  }
+}
+
+</script>
+</body>
+
+</html>

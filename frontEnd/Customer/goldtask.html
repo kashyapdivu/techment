@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+</head>
+
+
+<body id="bd" >
+
+
+
+<input id="gp" type="text" name="goldPrice" >
+<input id= "gg"type="text" name="grams" onblur="goldAmount()">
+
+<p  id="gAmt" ></p>
+
+
+
+<script>
+
+    function goldAmount(){
+       // alert("hello");
+       var g1 = document.getElementById("gp").value;
+       var g2 = document.getElementById("gg").value;
+   
+       var multi = parseInt(g1) * parseInt(g2);
+   
+    document.getElementById("gAmt").innerHTML = multi;
+   
+    }
+   
+   </script>
+   
+
+</body>
+     </html>

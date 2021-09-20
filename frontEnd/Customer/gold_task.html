@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- my css -->
+    <link href="./stylesheet.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Gold Task!</title>
+
+
+    <script>
+
+
+    </script>
+    <style>
+        .heading {
+            color: maroon;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+        }
+
+        .submit {
+            width: 400px;
+            background-color: darkblue;
+            align-items: center;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+
+<body style="background-image: url('./gold.png');backdrop-filter: blur(29px);">
+    <div class="form-div">
+
+
+        <form class="container " novalidate style="background: white;margin-right: 4rem;padding-left: 2rem;">
+
+            <h4>Gold Task </h4>
+            <hr class="new1">
+            <div class="row col-mb-3">
+                <label for="validationTooltip01" class=" col-md-4 col-form-label">Gold Rate</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control" id="goldRate" placeholder="Enter Today  Rate" required>
+                </div>
+            </div>
+<br><br>
+
+            <div class="row col-mb-3">
+                <label for="validationTooltip01" class=" col-md-4 col-form-label">Gold Weight<br><span>(in gram)</span></label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control" id="goldWeight" placeholder="Enter Weight (in gram)" onblur="calGoldAmount()">
+                </div>
+            </div>
+            
+            <div class="col-md-4 position-relative" >
+                 <p id="amount" ></p>
+            </div>
+
+            <br><br>
+            <div class="row col-mb-3">
+                <label for="validationTooltip01" class=" col-md-4 col-form-label">Making Charge</label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control" id="makingCharge" placeholder="Enter Making price" onblur="calMakingCharge()">
+                </div>
+            </div>
+
+            <div class="col-md-4 position-relative" >
+                <p id="makeP" ></p>
+           </div>
+
+
+            <br><br>
+            <div class="row col-mb-3">
+                <label for="validationTooltip01" class=" col-md-4 col-form-label">Tax Charge</span></label>
+                <div class="col-sm-5">
+                <input type="text" class="form-control" id="taxprice" placeholder="Enter Tax Charge" onblur="calTaxAmount()">
+                </div>
+            </div>
+
+            <div class="col-md-4 position-relative" >
+                <p id="taxP" ></p>
+           </div>
+
+         
+
+       <br> <br>
+       <br> <br> <br>      <br>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script>
+
+// var gp = document.getElementById("goldRate").value;
+//   var gw = document.getElementById("goldWeight").value; 
+//   var makeCharge = document.getElementById("makingCharge").value;
+//   var taxCharge = document.getElementById("taxprice").value;
+
+function calGoldAmount(){
+  var gp = document.getElementById("goldRate").value;
+  var gw = document.getElementById("goldWeight").value; 
+
+  document.getElementById("amount").innerHTML =  "        Gold Rate Amount :         " + parseInt(gp) * parseInt(gw);
+}
+
+function calMakingCharge(){
+  var makeCharge = document.getElementById("makingCharge").value;
+  var gw = document.getElementById("goldWeight").value; 
+ 
+  document.getElementById("makeP").innerHTML =  "        Making Charge Amount :         " + parseInt(makeCharge) +  parseInt(gw);
+}
+
+
+function calTaxAmount(){
+  var taxCharge = document.getElementById("taxprice").value;
+  var gw = document.getElementById("goldWeight").value; 
+  var gp = document.getElementById("goldRate").value;
+  var makeCharge = document.getElementById("makingCharge").value;
+
+var t1 = parseInt(taxCharge) *parseInt(gp);
+var t2 = parseInt(makeCharge) * parseInt(gw);
+var res = parseInt(t1) + parseInt(t2);
+ 
+  document.getElementById("taxP").innerHTML =  "        Tax Charge Amount :         " + parseInt(t1)+ "<br><br>"
+                + "        Total Charge Amount :         " +  parseInt(res)  + "<br>";
+ 
+}
+
+
+
+</script>
+
+
+</body>
+
+</html>

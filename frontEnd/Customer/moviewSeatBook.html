@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book seat</title>
+
+<style>
+
+button{
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+margin: 1em;
+text-align: center;
+}
+</style>
+
+
+</head>
+<body>
+    <h1>  Book Seat </h1>
+<input id="num1" type="number" >
+<input id="num2" type="number">
+
+<button type="submit" onclick="addTable()">Click here</button>
+
+
+
+    <div id="myDynamicTable"></div>
+
+</body>
+
+
+<script>
+
+function addTable() {
+var  row = parseInt(document.getElementById('num1').value);
+var  column = parseInt(document.getElementById('num2').value);
+
+  var myTableDiv = document.getElementById("myDynamicTable");
+
+  var table = document.createElement('TABLE');
+  table.border = '1';
+
+  var tableBody = document.createElement('TBODY');
+  table.appendChild(tableBody);
+
+  for (var i = 0; i < row; i++) {
+    var tr = document.createElement('TR');
+    tableBody.appendChild(tr);
+
+    for (var j = 0; j < column; j++) {
+      var td = document.createElement('TD');
+      td.width = '75';
+     // td.appendChild(document.createTextNode("Cell " + i + "," + j));
+     var  button = document.createElement('button');
+     //button.width = '50';button.height ='50';button.color ='grey';
+     button.appendChild(document.createTextNode("Cell " + i + "," + j),onclick='chnge(this,"red")');
+    
+     td.appendChild(button);
+      tr.appendChild(td);
+    }
+  }
+  myTableDiv.appendChild(table);
+}
+addTable();
+chnge(this,"red");
+</script>
+</html>

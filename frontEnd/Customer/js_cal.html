@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script>
+
+function addMe(){
+  var num1 = document.getElementById("n1").value;
+  var num2 = document.getElementById("n2").value;
+  const c = parseInt(num1) + parseInt(num2);
+//   document.write("Add : " + c);
+
+// display the sum
+document.write('The sum of ' + num1 + ' and ' + num2 + ' is: ' + c);
+}
+
+
+function addMe(){
+  var num1 = document.getElementById("n1").value;
+  var num2 = document.getElementById("n2").value;
+  const c = parseInt(num1) + parseInt(num2);
+//   document.write("Add : " + c);
+
+// display the sum
+document.write('The sum of ' + num1 + ' and ' + num2 + ' is: ' + c);
+}
+
+function subMe(){
+  var num1 = document.getElementById("n1").value;
+  var num2 = document.getElementById("n2").value;
+  const c = parseInt(num1) - parseInt(num2);
+//   document.write("Add : " + c);
+
+// display the sum
+document.write('The substract of ' + num1 + ' and ' + num2 + ' is: ' + c);
+}
+
+function divideMe(){
+  var num1 = document.getElementById("n1").value;
+  var num2 = document.getElementById("n2").value;
+  const c = parseInt(num1) / parseInt(num2);
+  // display the sum
+document.write('The divide of ' + num1 + ' and ' + num2 + ' is: ' + c);
+}
+
+function multiplyMe(){
+  var num1 = document.getElementById("n1").value;
+  var num2 = document.getElementById("n2").value;
+  const c = parseInt(num1) / parseInt(num2);
+  // display the sum
+document.write('The divide of ' + num1 + ' and ' + num2 + ' is: ' + c);
+}
+</script>
+
+
+</head>
+
+
+<body id="bd" >
+ <!-- there are 3 tppe of variable in js -->
+    <input id="n1" type="number" placeholder="enter number 1">
+
+   <input id="n2" type="number" placeholder="enter number 2">
+
+<button id="add" type="submit" onclick="addMe()">Add</button>
+
+<button id="add" type="submit" onclick="subMe()">Subtract</button>
+
+<button id="add" type="submit" onclick="divideMe()">Divide</button>
+
+<button id="add" type="submit" onclick="multiplyMe">Multiply</button>
+
+
+
+</body>
+     </html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script>
+
+function mybg{
+     document.getElementById("bd").style.background = "red";
+ }
+
+ function myFunction(){
+     document.getElementById("p1").innerHTML = "hello red";
+ }
+ function chngeAttribute(){
+     document.getElementById("img1").style.height = 400px;
+ }
+
+</script>
+
+
+
+</head>
+
+
+<body id="bd" style="background-color: blueviolet;">
+
+<p id="p1" ></p>
+ 
+<img  id="img1">
+<button onclick="myFunction()"> click here</button>
+
+<button onclick="chngeAttribute()"> click here</button>
+
+<button onclick="mybg()"> click here</button>
+       </body>
+     </html>
