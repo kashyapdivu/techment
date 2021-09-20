@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        validationForm=()=>{
+            let name=document.forms["Registration"]["Custname"].value;
+            if(name.length<=3){
+                alert("name should be greater than 3 character");
+                return false;
+            }
+            let password=document.forms["Registration"]["pass"].value;
+            if(password.match(/[A-Z]/g)){}
+            else
+            {
+                alert("password must contain uppercase character");
+                return false;
+            }
+            if(password.match(/[a-z]/g)){}
+            else
+            {
+                alert("password must contain lowercase character");
+                return false;
+            }
+            if(password.match(/[0-9]/g)){}
+            else
+            {
+                alert("password must contain numbers");
+                return false;
+            }
+
+            let confirmPassword=document.forms["Registration"]["confirmpass"].value;
+
+            if(password!=confirmPassword)
+            {
+                alert("password and confirm password should be same");
+                return false;
+            }
+
+            let mobilenumber=document.forms["Registration"]["mobile"].value;
+
+            if(mobilenumber.length!=10)
+            {
+                alert("mobile number should be of 10 digits");
+                return false;
+            }
+
+            if(mobilenumber[0]==7||mobilenumber[0]==8||mobilenumber[0]==9){}
+            else{
+                alert("mobile number should start with 7 or 8 or 9");
+                return false;
+            }
+
+
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Customer Registration Form </h1>
+    <form name="Registration" action="index1.html" onsubmit="return validationForm()" method="post">
+    Name: <input type="text" name="Custname" ><br><br>
+    Password: <input type="password" name="pass" >
+    Confirm Password: <input type="password" name="confirmpass" ><br><br>
+    Mobile Number: <input type="text" name="mobile"><br><br>
+    Gender: <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other<br><br>
+    Country: <select name="country">
+        <option value="mumbai">Mumbai</option>
+        <option value="pune">Pune</option>
+        <option value="chennai">Chennai</option>
+        <option value="hydrabad">Hydrabad</option>
+        <option value="chhattisgarh">Chhattisgarh</option>
+    </select><br><br>
+    DOB: <input type="date" ><br><br>
+    <label for="submit">Submit</label>
+    <input type="submit" name="submit">
+</form>
+
+
+</body>
+</html>
